@@ -58,10 +58,9 @@ const Home: NextPage = () => {
           {articles.map((article, i) => <div key={article.title} className={styles.article}>
             <img src={IMAGE_PATHS[i]}/>
             <div className={styles.title}>{article.title}</div>
-            <p>{article.text}</p>
+            <div className={styles.text}>{article.text}</div>
             <div className={styles.date}>{renderDate(article.published)}</div>
           </div>)}
-          
         </div>}
       </div>
 
